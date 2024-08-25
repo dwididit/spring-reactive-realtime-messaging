@@ -1,1 +1,14 @@
-spring.application.name=spring-reactive-realtime-messaging
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/chat_reactive
+  main:
+    web-application-type: reactive
+
+server:
+  port: 8090
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    reactor.netty: DEBUG
